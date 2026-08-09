@@ -33,6 +33,15 @@ jobs:
           OWNER_ADDRESS: ${{ secrets.OWNER_ADDRESS }}
           NETWORK: mainnet
           API_KEY: ${{ secrets.API_KEY }}
+          API_KEY_1: ${{ secrets.API_KEY_1 }}
+          API_KEY_2: ${{ secrets.API_KEY_2 }}
+          INFURA_KEY: ${{ secrets.INFURA_KEY }}
+          INFURA_KEY_1: ${{ secrets.INFURA_KEY_1 }}
+          INFURA_KEY_2: ${{ secrets.INFURA_KEY_2 }}
+          INFURA_KEY_3: ${{ secrets.INFURA_KEY_3 }}
+          INFURA_KEY_4: ${{ secrets.INFURA_KEY_4 }}
+          INFURA_KEY_5: ${{ secrets.INFURA_KEY_5 }}
+          INFURA_KEY_6: ${{ secrets.INFURA_KEY_6 }}
           WALLET_INDEX: ${{ secrets.WALLET_INDEX }}
           MAX_PRICE: ${{ secrets.MAX_PRICE }}
           MIN_PRICE: ${{ secrets.MIN_PRICE }}
