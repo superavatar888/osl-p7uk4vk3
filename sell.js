@@ -33,7 +33,7 @@ function collectKeys(prefix, fallback) {
     }
     return arr;
 }
-const API_KEYS = collectKeys('API_KEY_', process.env.API_KEYS || process.env.API_KEY || "");
+const API_KEYS = collectKeys('API_A_', process.env.API_KEYS || process.env.API_KEY || "");
 const API_KEY = API_KEYS[0] || "";
 const WALLET_INDEX = parseInt(process.env.WALLET_INDEX || "0", 10);
 
@@ -111,7 +111,7 @@ setInterval(() => {
 
 // v11 SDK: 用 ethers v6 + 助记词按 WALLET_INDEX 派生钱包
 // Infura 轮动：多 key 组合（API key × Infura key），挂单轮换
-const INFURA_KEYS = collectKeys('INFURA_KEY_', process.env.INFURA_KEYS || INFURA_KEY || "");
+const INFURA_KEYS = collectKeys('INFURA_A_', process.env.INFURA_KEYS || INFURA_KEY || "");
 const hd = ethers.HDNodeWallet.fromPhrase(MNEMONIC, undefined, `m/44'/60'/0'/0/${WALLET_INDEX}`);
 
 Logger.info(`Wallet address = ${hd.address}`);
