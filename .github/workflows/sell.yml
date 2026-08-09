@@ -35,7 +35,6 @@ jobs:
           API_KEY: ${{ secrets.API_KEY }}
           API_KEY_1: ${{ secrets.API_KEY_1 }}
           API_KEY_2: ${{ secrets.API_KEY_2 }}
-          INFURA_KEY: ${{ secrets.INFURA_KEY }}
           INFURA_KEY_1: ${{ secrets.INFURA_KEY_1 }}
           INFURA_KEY_2: ${{ secrets.INFURA_KEY_2 }}
           INFURA_KEY_3: ${{ secrets.INFURA_KEY_3 }}
